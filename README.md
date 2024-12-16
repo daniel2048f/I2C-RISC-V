@@ -1,6 +1,6 @@
 # I2C-PROYECTO
 
-Proyecto I2C, data de configuración y elementos necesarios para poder visualizar el funcionamiento del módulo I2C del procesador RISC-V. Esta es una versión inicial que no comprende el funcionamiento completo del modulo ni tampoco es completamente funcional ni correcto en su totalidad sino más bien una primera aproximación para el desarrollo del mismo.
+Proyecto I2C, data de configuración y elementos necesarios para poder visualizar el funcionamiento del módulo I2C del procesador RISC-V. Esta es una versión inicial que no comprende el funcionamiento completo  ni totalmente correcto en su totalidad sino más bien una primera aproximación para el desarrollo del mismo.
 
 # I2C Write Module Project
 
