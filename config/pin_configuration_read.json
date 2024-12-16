@@ -1,0 +1,54 @@
+{
+    "pins": [
+        {
+            "name": "SDA",
+            "direction": "inout",
+            "type": "Open-drain",
+            "description": "Serial Data Line."
+        },
+        {
+            "name": "SCL",
+            "direction": "output",
+            "type": "Open-drain",
+            "description": "Serial Clock Line."
+        },
+        {
+            "name": "RESET",
+            "direction": "input",
+            "type": "Active Low",
+            "description": "Reset signal for the I2C controller."
+        },
+        {
+            "name": "INT",
+            "direction": "output",
+            "type": "Push-Pull",
+            "description": "Interrupt signal for data ready."
+        },
+        {
+            "name": "CLK",
+            "direction": "input",
+            "type": "Clock",
+            "description": "System clock input for internal timing."
+        },
+        {
+            "name": "VDD",
+            "direction": "power",
+            "type": "Supply",
+            "description": "Positive power supply for the module."
+        },
+        {
+            "name": "GND",
+            "direction": "power",
+            "type": "Ground",
+            "description": "Ground connection for the module."
+        }
+    ],
+    "additional_info": {
+        "pullup_resistors": "Both SDA and SCL require external pull-up resistors to ensure proper logic levels.",
+        "recommended_pullup_value": "4.7 k\u03a9 for standard mode, 2.2 k\u03a9 for fast mode.",
+        "voltage_levels": {
+            "logic_high": "3.3V or 5V depending on configuration.",
+            "logic_low": "0V"
+        }
+    }
+}

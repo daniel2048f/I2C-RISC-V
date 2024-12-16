@@ -1,0 +1,3 @@
+iverilog -o test top.v i2c_registers.v i2c_controller.v i2c_slave_controller.v top_tb.v
+vvp test
+gtkwake

@@ -1,0 +1,52 @@
+{
+    "module_name": "I2C_Controller_Read",
+    "version": "1.0.0",
+    "description": "Complete I2C Controller for reading operations in Master/Slave mode with error detection and handling.",
+    "specifications": {
+        "supported_modes": [
+            "Master",
+            "Slave"
+        ],
+        "addressing_modes": [
+            "7-bit",
+            "10-bit"
+        ],
+        "clock_frequencies": {
+            "standard_mode": "100 kHz",
+            "fast_mode": "400 kHz",
+            "high_speed_mode": "3.4 MHz"
+        },
+        "features": [
+            "Start/Stop condition generation",
+            "Data reception from peripherals",
+            "ACK/NACK detection and handling",
+            "Clock stretching",
+            "Interrupt generation for data ready",
+            "Configurable prescaler for clock control",
+            "Support for multi-master arbitration",
+            "Error handling for timeout and collisions"
+        ],
+        "interfaces": [
+            {
+                "type": "AMBA APB",
+                "description": "Advanced Peripheral Bus interface for integration."
+            },
+            {
+                "type": "Native I2C",
+                "description": "Direct interface to I2C bus lines (SDA, SCL)."
+            }
+        ]
+    },
+    "register_map": {
+        "I2C_BITRATE": "Configures the bitrate for the I2C bus.",
+        "I2C_CTRL": "Control register for initiating commands (start, stop, read, write).",
+        "I2C_STATUS": "Status register indicating current state and error conditions.",
+        "I2C_DATA_IN": "Register holding data received from the peripheral.",
+        "I2C_ADDR": "Address register for the peripheral."
+    },
+    "error_handling": {
+        "timeout_detection": "Detects if a device fails to respond within a specified timeframe.",
+        "bus_collision": "Indicates a collision when multiple masters attempt to drive the bus simultaneously.",
+        "unexpected_nack": "Handles cases where ACK is not received from the peripheral."
+    }
+}
