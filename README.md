@@ -170,5 +170,6 @@ Proyecto desarrollado como trabajo final de la asignatura electiva Diseño de Ci
 
 Desarrollado por los estudiantes Daniel Alejandro Cangrejo López, Santiago Alfonso Luna Rueda, Alvaro Sebástian Hernandez Ramirez y Andrea Carolina Soler Ramirez con base en los requerimientos dados por los docentes Iván Marín y Alexander Vera.
 
+##
 
 Cualquier duda o mejora, ¡no dudes en contribuir! 🚀
