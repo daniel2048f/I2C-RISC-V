@@ -156,10 +156,18 @@ En cuanto a la interacción con la memoria, las señales `mem_addr[31:0]` y `mem
 
 Por último, la señal `rst` activa inicialmente el sistema para garantizar su correcta inicialización, y la señal `rw` indica que el controlador está en modo de lectura, con un valor de `0`. Sin embargo, a pesar de que las señales de control parecen funcionar como se espera, el sistema no logra completar con éxito la operación de lectura debido a problemas de comunicación entre el maestro I2C, el periferico y la memoria. Es necesario verificar la configuración del periferico I2C para asegurar que responde a la dirección configurada, así como revisar las señales de control y sincronización, particularmente `mem_ready` y `mem_valid`, para garantizar un flujo correcto de datos. También sería útil revisar la implementación del protocolo en el periferico y validar si las señales generadas por el maestro cumplen con las especificaciones del protocolo I2C.
 
-## INSTRUCCIONES
+## Instrucciones
 
 iverilog -o test top.v i2c_registers.v i2c_controller.v i2c_slave_controller.v top_tb.v
 
 vvp test
 
 gtkwake
+
+## Créditos
+
+Proyecto desarrollado como trabajo final de la asignatura electiva Diseño de Circuitos Integrados del programa de Ingeniería Electrónica de la Universidad del Quindío.
+
+Desarrollado por los estudiantes Daniel Alejandro Cangrejo López, Santiago Alfonso Luna Rueda, Alvaro Sebástian Hernandez Ramirez y Andrea Carolina Soler Ramirez con base en los requerimientos dados por los docentes Iván Marín y Alexander Vera.
+
+Cualquier duda o mejora, ¡no dudes en contribuir! 🚀
